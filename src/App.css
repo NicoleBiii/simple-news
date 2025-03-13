@@ -1,0 +1,105 @@
+body {
+  font-family: "Bricolage Grotesque", sans-serif;
+}
+
+.news-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.news-card {
+  background-color: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 380px;
+  width: 100%;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+@media (min-width: 768px) {
+  .news-card {
+    padding: 1.5rem;
+  }
+}
+.news-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+.news-card__image {
+  width: 100%;
+  height: 220px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+}
+.news-card__title {
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+.news-card__description {
+  font-size: 1rem;
+  color: #3E4147;
+  text-align: center;
+  margin: 0.6rem 0;
+}
+.news-card__button {
+  background-color: #3E4147;
+  color: #FFFFFF;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 0.7rem;
+}
+.news-card__button:hover {
+  background-color: #26282c;
+  transform: scale(1.05);
+}
+.news-card__summary {
+  background: linear-gradient(135deg, #E04038 0%, #c6271f 100%);
+  color: #FFFFFF;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 1rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.news-card__summary:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .news-card {
+    max-width: 400px;
+  }
+  .news-card__title {
+    font-size: 1.3rem;
+  }
+  .news-card__description {
+    font-size: 1.1rem;
+  }
+}
+@media (min-width: 1280px) {
+  .news-container {
+    justify-content: space-between;
+  }
+  .news-card {
+    max-width: 420px;
+  }
+}/*# sourceMappingURL=App.css.map */

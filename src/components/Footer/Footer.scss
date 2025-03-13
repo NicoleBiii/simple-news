@@ -1,0 +1,44 @@
+@use "../../styles/variables" as *;
+
+.footer {
+    background-color: $primary-red;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: "Bricolage Grotesque";
+    border-radius: 10px;
+  }
+  
+  .footer__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .footer__logo {
+    width: 120px; // Adjust size as needed
+    height: auto;
+  }
+  
+  .footer__title {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  
+  .footer__text {
+    font-size: 20px;
+  }
+  
+  .footer__email {
+    color: $primary-grey;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .footer__email:hover {
+    text-decoration: underline;
+  }
+  

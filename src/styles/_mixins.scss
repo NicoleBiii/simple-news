@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+@mixin tablet {
+    @media (min-width: $tablet-min-width) {
+        @content;
+    }
+}
+
+
+@mixin desktop {
+    @media (min-width: $desktop-min-width) {
+        @content;
+    }
+}
+
+@mixin responsive-padding {
+    padding: 1rem;
+    @include tablet {
+        padding: 1.5rem;
+    }
+}
