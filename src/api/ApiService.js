@@ -1,8 +1,8 @@
 import axios from "axios";
 const BASE_URL = "https://newsapi.org/v2/top-headlines?sources=bbc-news";
-const API_KEY = import.meta.env.API_KEY;
+const API_KEY = import.meta.env.VITE_API_KEY;
 const BASE_URL_AI = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
-const API_KEY_AI = import.meta.env.API_KEY_AI;
+const API_KEY_AI = import.meta.env.VITE_API_KEY_AI;
 
 export const fetchArticles = async () => {
     try {
@@ -12,7 +12,7 @@ export const fetchArticles = async () => {
         return resp.data;
     } catch (error) {
         console.log(error);
-        alert('Failed to fetch ariticles. Please try again.');
+        throw new Error("Failed to fetch articles");
     }
 }
 
